@@ -1,0 +1,57 @@
+/*Fonte*/
+/* {
+  font-family: 'Merriweather', serif;
+}
+ {
+  font-family: 'Montserrat', sans-serif;
+}*/
+/* projeto.html */
+/*APRESENTACAO*/
+.bloco {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 95%;
+  margin: 0 auto;
+}
+.trabalho-imagem {
+  width: 50%;
+  height: 30rem;
+  border-style: solid;
+  border-width: 3px;
+}
+.trabalho {
+  display: flex;
+  flex-flow: column wrap;
+  width: 50%;
+  margin-left: 2rem;
+}
+.trabalho-nome {
+  font-size: 2rem;
+  margin: 0 auto;
+  font-weight: bold;
+}
+.trabalho-box {
+  margin-top: 1rem;
+}
+.trabalho-titulo {
+  font-size: 1.5rem;
+}
+.trabalho-descricao {
+  margin-top: .5rem;
+}
+
+@media (max-width: 68rem) {
+  .trabalho-imagem {
+    width: 100%;
+    height: 70rem;
+  }
+  .bloco {
+    flex-flow: column nowrap;
+    width: 95%;
+  }
+  .trabalho {
+    margin-top: 2rem;
+    width: 100%;
+    margin-left: 0rem;
+  }
+}
