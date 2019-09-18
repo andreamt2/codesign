@@ -8,8 +8,6 @@
   <link href="assets/css/reset.css" rel="stylesheet">
   <link href="assets/css/base.css" rel="stylesheet">
   <link href="assets/css/projeto-style.css" rel="stylesheet">
-  <script src="assets/js/codes.js"></script>
-  <script src="assets/js/projeto.js"></script>
   <meta charset="utf-8">
 </head>
 
@@ -18,7 +16,7 @@
     <img class="logo" src="http://picsum.photos/200/200/?random" alt="logo">
     <nav class="main-menu" >
       <h1 class="menu-title" >
-        {{this}}
+        Categorias
       </h1>
 
       <figure class="menu-figure" >
@@ -26,19 +24,19 @@
       </figure>
 
       <ul class="menu-list">
-        {{#each portifolio}}
-          <li class="menu-item" ><a class= 'link' href="categoria.html?key=={{@key}}">{{this.nome}}</a></li>
-        {{/each}}
+        <li class="menu-item" ><a class= 'link' href="categoria.html">Elétrica</a></li>
+        <li class="menu-item" ><a class= 'link' href="categoria.html">Fabricação</a></li>
+        <li class="menu-item" ><a class= 'link' href="categoria.html">Virtual</a></li>
+        <li class="menu-item" ><a class= 'link' href="categoria.html">Matfis</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="main" >
-    
     <div class="bloco">
       <img  class="trabalho-imagem" src='http://picsum.photos/450/250/?random' alt="">
       <ul class="trabalho">
-        <h2 class="trabalho-nome">{{this.titulo}}</h2>
+        <h2 class="trabalho-nome">Projeto 1</h2>
         <li class="trabalho-box">
           <h2 class="trabalho-titulo">Data:</h2>
           <p  class="trabalho-descricao">descricao</p>
@@ -49,7 +47,7 @@
         </li>
         <li class="trabalho-box">
           <h2 class="trabalho-titulo">Descrição:</h2>
-          <p  class="trabalho-descricao">{{this.descricao}}</p>
+          <p  class="trabalho-descricao">descricao</p>
         </li>
         <li class="trabalho-box">
           <h2 class="trabalho-titulo">Titulo descricao</h2>

@@ -52,7 +52,7 @@
 @media (max-width: 68rem) {
   .trabalho-imagem {
     width: 100%;
-    height: 65rem;
+    height: 30rem;
   }
   .bloco {
     flex-flow: column nowrap;
