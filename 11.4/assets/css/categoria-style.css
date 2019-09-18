@@ -29,12 +29,17 @@
   margin: 0 auto;
 }
 .box-projetos {
+  /*
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row nowrap;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 33%;
   margin-top: 1rem;
 }
 .link-projetos {
+  grid-column-start: 1;
+  grid-column-end: 3;
   font-size:1.5rem;
   font-weight: bold;
 }
@@ -71,4 +76,9 @@
   .title-categoria {
     font-size:3.5rem;
   }
+
+  .imagem-projetos {
+    height: 30rem;
+
+}
 }
