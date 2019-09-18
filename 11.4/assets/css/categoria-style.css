@@ -40,6 +40,7 @@
 }
 .imagem-projetos {
   margin-top: 1rem;
+
 }
 .descricao-projetos{
   max-width: 10rem;
@@ -52,9 +53,22 @@
 @media (max-width: 68rem) {
   .projetos {
     flex-flow: column wrap;
-    width: 95%;
+    width: 100%;
   }
   .box-projetos {
     width: 100%;
+  }
+
+  .descricao-projetos{
+    font-size:1.8rem;
+    max-width: 30rem;
+  }
+
+  .link-projetos {
+    font-size:2.3rem;
+  }
+
+  .title-categoria {
+    font-size:3.5rem;
   }
 }

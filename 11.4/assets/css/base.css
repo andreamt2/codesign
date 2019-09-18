@@ -20,9 +20,7 @@
 .menu-figure {
   display: none;
 }
-.menu-image {
-  display: none;
-}
+
 .menu-list {
   flex-grow: 1;
   display: flex;
@@ -60,6 +58,35 @@
 /*MOBILE*/
 @media (max-width: 68rem) {
   .main {
-    max-width: 90%;
+
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 66rem) {
+  .menu-title {
+
+    color:#283F80;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+    display: block;
+  }
+
+  .menu-figure {
+    display: block;
+  }
+
+  .menu-image {
+    height: 2rem;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .main {
+    padding: 1rem;
   }
 }

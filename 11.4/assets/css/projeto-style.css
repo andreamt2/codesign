@@ -1,10 +1,14 @@
 /*Fonte*/
-/* {
+ {
+  .trabalho-nome, .trabalho-titulo
   font-family: 'Merriweather', serif;
+
 }
  {
+  .trabalho-descricao
   font-family: 'Montserrat', sans-serif;
-}*/
+
+}
 /* projeto.html */
 /*APRESENTACAO*/
 .bloco {
@@ -26,32 +30,49 @@
   margin-left: 2rem;
 }
 .trabalho-nome {
-  font-size: 2rem;
   margin: 0 auto;
   font-weight: bold;
+  font-size:2.5rem;
+  color:#283F80;
 }
 .trabalho-box {
   margin-top: 1rem;
 }
 .trabalho-titulo {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  color:#283F80;
+
 }
 .trabalho-descricao {
   margin-top: .5rem;
+  font-size: 1.5rem;
+  color:#3F65CC
 }
 
 @media (max-width: 68rem) {
   .trabalho-imagem {
     width: 100%;
-    height: 70rem;
+    height: 65rem;
   }
   .bloco {
     flex-flow: column nowrap;
-    width: 95%;
+    width: 100%;
   }
   .trabalho {
     margin-top: 2rem;
     width: 100%;
     margin-left: 0rem;
+  }
+
+  .trabalho-descricao {
+    font-size: 2rem;
+  }
+  .trabalho-titulo {
+    font-size: 2.3rem;
+    color:#283F80;
+  }
+
+  .trabalho-nome {
+    font-size:3rem;
   }
 }
