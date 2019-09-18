@@ -15,7 +15,7 @@
 
 <body class="body">
   <header class="header" >
-    <img class="logo" src="http://picsum.photos/200/200/?random" alt="logo">
+    <a href="index.html" ><img class="logo" src="http://picsum.photos/200/200/?random" alt="logo"> </a>
     <nav class="main-menu" >
       <h1 class="menu-title" >
         {{this}}
@@ -27,7 +27,7 @@
 
       <ul class="menu-list">
         {{#each portifolio}}
-          <li class="menu-item" ><a class= 'link' href="categoria.html?key=={{@key}}">{{this.nome}}</a></li>
+        <li class="menu-item" ><a class= 'link' href="categoria.html?key={{@key}}">{{@key}}</a></li>
         {{/each}}
       </ul>
     </nav>
@@ -38,22 +38,18 @@
     <div class="bloco">
       <img  class="trabalho-imagem" src='http://picsum.photos/450/250/?random' alt="">
       <ul class="trabalho">
-        <h2 class="trabalho-nome">{{this.titulo}}</h2>
+        <h2 class="trabalho-nome"> Projeto X </h2>
         <li class="trabalho-box">
           <h2 class="trabalho-titulo">Data:</h2>
-          <p  class="trabalho-descricao">descricao</p>
+          <p  class="trabalho-descricao">XX/XX/XX</p>
         </li>
         <li class="trabalho-box">
           <h2 class="trabalho-titulo">Materia:</h2>
-          <p  class="trabalho-descricao">descricao</p>
+          <p  class="trabalho-descricao">X</p>
         </li>
         <li class="trabalho-box">
           <h2 class="trabalho-titulo">Descrição:</h2>
-          <p  class="trabalho-descricao">{{this.descricao}}</p>
-        </li>
-        <li class="trabalho-box">
-          <h2 class="trabalho-titulo">Titulo descricao</h2>
-          <p  class="trabalho-descricao">descricao</p>
+          <p  class="trabalho-descricao">descrição</p>
         </li>
       </ul>
     </div>

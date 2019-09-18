@@ -30,16 +30,19 @@
   margin-left: 2rem;
 }
 .trabalho-nome {
+  display: none;
   margin: 0 auto;
   font-weight: bold;
   font-size:2.5rem;
   color:#283F80;
 }
+
 .trabalho-box {
   margin-top: 1rem;
 }
 .trabalho-titulo {
   font-size: 1.8rem;
+  font-weight: bold;
   color:#283F80;
 
 }
@@ -52,27 +55,28 @@
 @media (max-width: 68rem) {
   .trabalho-imagem {
     width: 100%;
-    height: 30rem;
+    height: 40rem;
   }
   .bloco {
     flex-flow: column nowrap;
     width: 100%;
   }
   .trabalho {
-    margin-top: 2rem;
+    margin-top: 4rem;
     width: 100%;
     margin-left: 0rem;
+    height: 55rem;
   }
 
   .trabalho-descricao {
-    font-size: 2rem;
+    font-size: 3rem;
+    margin-top: 2rem;
   }
   .trabalho-titulo {
-    font-size: 2.3rem;
+    font-size: 3.5rem;
     color:#283F80;
+    margin-top: 4rem;
   }
 
-  .trabalho-nome {
-    font-size:3rem;
-  }
+ 
 }

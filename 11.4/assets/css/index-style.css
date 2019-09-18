@@ -12,7 +12,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-size:1.5rem;
+  font-size:1.8rem;
   color:#283F80;
 }
 .title-index {
@@ -22,12 +22,11 @@
   margin-bottom: 1.5rem;
 }
 .imagem-aluno {
-  width: 66%;
+  width: 30rem;
   box-shadow: 0 0 10px;
 }
 .nome-aluno {
   font-weight: bold;
-  text-decoration: underline;
   margin-top: .5rem;
   margin-bottom: 1rem;
 }
@@ -67,27 +66,28 @@
 @media (max-width: 68rem) {
   .box-categorias {
     width: 100%;
+    height: 15rem;
   }
 
   .descricao-categorias{
-  font-size:1.5rem;
+  font-size:2.5rem;
  
   }
 
   .link-categorias {
-  font-size:2rem;
+  font-size:2.5rem;
   }
 
   .descricao-aluno {
-  font-size:1.5rem;
+  font-size:2rem;
   }
 
   .title-index {
-  font-size:3rem;
+  font-size:4rem;
   }
 
   .aluno {
-  font-size:2rem;
+  font-size:3rem;
   
 }
 }
