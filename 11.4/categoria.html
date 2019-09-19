@@ -15,14 +15,24 @@
 
 <body class="body">
   <header class="header" >
-   <a href="index.html" ><img class="logo" src="http://picsum.photos/200/200/?random" alt="logo"> </a>
+    <a href="index.html" ><img class="logo" src="assets/img/logo.png" alt="logo"> </a>
     <nav class="main-menu" >
       <h1 class="menu-title" >
-        Projetos
+        Portfolio de Projetos
       </h1>
 
       <figure class="menu-figure" >
-        <a href="#"><img class="menu-image" src="http://picsum.photos/200/200/?random" alt="Abrir Menu"></a>
+        <button class="menu-image"><img class="in-menu-image" src="assets/img/menu.png" alt="Abrir Menu"></button>
+        <div class="sidebar">
+          <h2 class="sidebar-title">CATEGORIAS</h2>
+          <ul class="sidebar-list">
+            {{#each portifolio}}
+            <li class="sidebar-item">
+              <a class= 'sidebar-link' href="categoria.html?key={{@key}}">{{@key}}</a>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
       </figure>
 
       <ul class="menu-list">

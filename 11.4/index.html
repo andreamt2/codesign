@@ -15,21 +15,30 @@
 
 <body class="body">
   <header class="header" >
-    <a href="index.html" ><img class="logo" src="http://picsum.photos/200/200/?random" alt="logo"> </a>
+    <a href="index.html" ><img class="logo" src="assets/img/logo.png" alt="logo"> </a>
     <nav class="main-menu" >
       <h1 class="menu-title" >
         Portfolio de Projetos
       </h1>
 
       <figure class="menu-figure" >
-        <a href="#"><img class="menu-image" src="http://picsum.photos/200/200/?random" alt="Abrir Menu"></a>
+        <button class="menu-image"><img class="in-menu-image" src="assets/img/menu.png" alt="Abrir Menu"></button>
+        <div class="sidebar">
+          <h2 class="sidebar-title">CATEGORIAS</h2>
+          <ul class="sidebar-list">
+            {{#each portifolio}}
+            <li class="sidebar-item">
+              <a class= 'sidebar-link' href="categoria.html?key={{@key}}">{{@key}}</a>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
       </figure>
 
       <ul class="menu-list">
         {{#each portifolio}}
         <li class="menu-item" ><a class= 'link' href="categoria.html?key={{@key}}">{{@key}}</a></li>
         {{/each}}
-
       </ul>
     </nav>
   </header>
@@ -38,7 +47,7 @@
 
     <figure class="aluno">
       <h1 class ="title-index" >Portfolio de projetos</h1>
-      <img  class="imagem-aluno" src='http://picsum.photos/450/250/?random' alt="imagem-aluno">
+      <img  class="imagem-aluno" src='assets/img/aluno.png' alt="imagem-aluno">
       <h2   class="nome-aluno" >João De Deus</h2>
       <h3   class="descricao-aluno" > Aluno de Engenharia do Insper.</h3>
     </figure>

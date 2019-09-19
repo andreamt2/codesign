@@ -15,14 +15,24 @@
 
 <body class="body">
   <header class="header" >
-    <a href="index.html" ><img class="logo" src="http://picsum.photos/200/200/?random" alt="logo"> </a>
+    <a href="index.html" ><img class="logo" src="assets/img/logo.png" alt="logo"> </a>
     <nav class="main-menu" >
       <h1 class="menu-title" >
         {{this}}
       </h1>
 
       <figure class="menu-figure" >
-        <a href="#"><img class="menu-image" src="http://picsum.photos/200/200/?random" alt="Abrir Menu"></a>
+        <button class="menu-image"><img class="in-menu-image" src="assets/img/menu.png" alt="Abrir Menu"></button>
+        <div class="sidebar">
+          <h2 class="sidebar-title">CATEGORIAS</h2>
+          <ul class="sidebar-list">
+            {{#each portifolio}}
+            <li class="sidebar-item">
+              <a class= 'sidebar-link' href="categoria.html?key={{@key}}">{{@key}}</a>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
       </figure>
 
       <ul class="menu-list">
@@ -38,18 +48,22 @@
     <div class="bloco">
       <img  class="trabalho-imagem" src='http://picsum.photos/450/250/?random' alt="">
       <ul class="trabalho">
-        <h2 class="trabalho-nome"> Projeto X </h2>
+        <h2 class="trabalho-nome">{{this}}</h2>
+        <li class="trabalho-box">
+          <h2 class="trabalho-titulo">Título:</h2>
+          <p  class="trabalho-descricao">{{this.titulo}}</p>
+        </li>
         <li class="trabalho-box">
           <h2 class="trabalho-titulo">Data:</h2>
-          <p  class="trabalho-descricao">XX/XX/XX</p>
+          <p  class="trabalho-descricao">{{this.data}}</p>
         </li>
         <li class="trabalho-box">
           <h2 class="trabalho-titulo">Materia:</h2>
-          <p  class="trabalho-descricao">X</p>
+          <p  class="trabalho-descricao">{{this.materia}}</p>
         </li>
         <li class="trabalho-box">
           <h2 class="trabalho-titulo">Descrição:</h2>
-          <p  class="trabalho-descricao">descrição</p>
+          <p  class="trabalho-descricao">{{this.descricao}}</p>
         </li>
       </ul>
     </div>

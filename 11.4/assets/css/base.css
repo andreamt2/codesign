@@ -7,7 +7,8 @@
   display: flex;
 }
 .logo {
-  height: 2rem;
+  height: 3rem;
+  width: 4rem;
 }
 .main-menu {
   flex-grow: 1;
@@ -43,7 +44,6 @@
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   background-color: white;
-  box-shadow: 0 0 50px;
   padding: 1.5rem 0;
 }
 .link {
@@ -68,7 +68,7 @@
   }
 }
 
-@media (max-width: 66rem) {
+@media (max-width: 70rem) {
   .menu-title {
 
     color:#283F80;
@@ -80,12 +80,72 @@
   }
 
   .menu-figure {
-    display: block;
+    display: flex;
+    flex-direction: row-reverse;
   }
 
   .menu-image {
-    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer;
+    border-style: solid;
+    border-width: .1rem;
+    border-color: #9CB6FF;
+    box-sizing: border-box;
   }
+  .in-menu-image {
+    width: 4rem;
+    height: 4rem;
+  }
+  /*HOVER*/
+  .sidebar {
+    position: absolute;
+    width: 15rem;
+    margin-top: .5rem;
+    top: -100%;
+    display: block;
+    background-color: #4e5b80;
+    box-shadow: 0 0 10px;
+  }
+  .sidebar-list{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .sidebar-item{
+    background-color: white;
+    margin: 1rem 0;
+    width: 100%;
+    height: 10rem;
+  }
+  .sidebar-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #3F65CC;
+    font-weight: bold;
+  }
+  .sidebar-title {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  .menu-image:hover + .sidebar{
+    top: 0%;
+    transition: all 1s;
+  }
+  .sidebar:hover {
+    top: 0%;
+    transition: all 1s;
+  }
+  /**/
 
   .menu-list {
     display: none;

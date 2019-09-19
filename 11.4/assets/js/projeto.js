@@ -17,12 +17,14 @@ document.addEventListener('DOMContentLoaded', function() {
       vai se arrepender. Você foi avisado.
     */
 
+
     dados_projeto = data['portifolio'][categoria]['projetos'][projeto]
 
-
     coDesReplace('.menu-title', projeto)
+    coDesReplace('.trabalho-nome', projeto)
     coDesReplace('.menu-list', data)
-    coDesReplace('.trabalho-nome', titulo)
+    coDesReplace('.sidebar-list', data)
+    coDesReplace('.trabalho', dados_projeto)
     context = data['portifolio'][value]
     coDesReplace('.main', context)
   })

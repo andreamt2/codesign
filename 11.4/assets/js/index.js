@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     context = data
     console.log(context)
     coDesReplace('.menu-list', context)
+    coDesReplace('.sidebar-list', context)
     coDesReplace('.categorias', context)
   })
 })
