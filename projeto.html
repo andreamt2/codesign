@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Portifolio de projetos </title>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="assets/css/reset.css" rel="stylesheet">
+  <link href="assets/css/base.css" rel="stylesheet">
+  <link href="assets/css/projeto-style.css" rel="stylesheet">
+  <script src="assets/js/codes.js"></script>
+  <script src="assets/js/projeto.js"></script>
+  <meta charset="utf-8">
+</head>
+
+<body class="body">
+  <header class="header" >
+    <a href="index.html" ><img class="logo" src="assets/img/logo.png" alt="logo"> </a>
+    <nav class="main-menu" >
+      <h1 class="menu-title" >
+        {{this}}
+      </h1>
+
+      <figure class="menu-figure" >
+        <button class="menu-image"><img class="in-menu-image" src="assets/img/menu.png" alt="Abrir Menu"></button>
+        <div class="sidebar">
+          <h2 class="sidebar-title">CATEGORIAS</h2>
+          <ul class="sidebar-list">
+            {{#each portifolio}}
+            <li class="sidebar-item">
+              <a class= 'sidebar-link' href="categoria.html?key={{@key}}">{{@key}}</a>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+      </figure>
+
+      <ul class="menu-list">
+        {{#each portifolio}}
+        <li class="menu-item" ><a class= 'link' href="categoria.html?key={{@key}}">{{@key}}</a></li>
+        {{/each}}
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main" >
+    
+    <div class="bloco">
+      <img  class="trabalho-imagem" src='http://picsum.photos/450/250/?random' alt="">
+      <ul class="trabalho">
+        <h2 class="trabalho-nome">{{this}}</h2>
+        <li class="trabalho-box">
+          <h2 class="trabalho-titulo">Título:</h2>
+          <p  class="trabalho-descricao">{{this.titulo}}</p>
+        </li>
+        <li class="trabalho-box">
+          <h2 class="trabalho-titulo">Data:</h2>
+          <p  class="trabalho-descricao">{{this.data}}</p>
+        </li>
+        <li class="trabalho-box">
+          <h2 class="trabalho-titulo">Materia:</h2>
+          <p  class="trabalho-descricao">{{this.materia}}</p>
+        </li>
+        <li class="trabalho-box">
+          <h2 class="trabalho-titulo">Descrição:</h2>
+          <p  class="trabalho-descricao">{{this.descricao}}</p>
+        </li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>
